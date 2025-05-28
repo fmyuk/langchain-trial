@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "langchain"
+version = "0.1.0"
+description = ""
+authors = ["fumi uk <dcfumiya.238@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+gradio = "3.31.0"
+python-dotenv = "1.0.0"
+openai = "0.27.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
