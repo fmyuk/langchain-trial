@@ -24,3 +24,13 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
   load_dotenv()
   demo.launch()
+
+  app_env = os.environ.get("APP_ENV", "production")
+  if app_env == "production":
+    username = os.environ["GRADIO_USERNAME"]
+    password = os.environ["GRADIO_PASSWORD"]
+    auth = (username, password)
+  else:
+    auth = None
+
+  demo.launch(auth=auth)

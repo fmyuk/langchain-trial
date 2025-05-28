@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "langchain"
+name = "udemy-langchain"
 version = "0.1.0"
 description = ""
 authors = ["fumi uk <dcfumiya.238@gmail.com>"]
@@ -9,6 +9,9 @@ python = "3.11.3"
 gradio = "3.31.0"
 python-dotenv = "1.0.0"
 openai = "0.27.6"
+langchain = "^0.3.25"
+langchain-community = "^0.3.24"
+langchain-core = "^0.3.62"
 
 [tool.poetry.dev-dependencies]
 
